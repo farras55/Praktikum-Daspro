@@ -1,4 +1,4 @@
-//package Praktikum03;
+package Praktikum03;
 
 public class ContohVariable11 {
     public static void main(String[] args) {

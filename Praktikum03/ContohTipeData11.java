@@ -1,4 +1,4 @@
-//package Praktikum03;
+package Praktikum03;
 
 public class ContohTipeData11 {
 
