@@ -32,5 +32,7 @@ public class GajiKaryawan {
         System.out.println("Bonus: Rp " + bonus);
         System.out.println("Pajak: Rp " + pajak);
         System.out.println("Gaji akhir setelah pajak: Rp " + gajiAkhir);
+
+        scanner.close();
     }
 }

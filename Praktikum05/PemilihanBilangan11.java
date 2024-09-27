@@ -19,5 +19,7 @@ public class PemilihanBilangan11 {
         {
             System.out.println("Angka " + angka + " termasuk bilangan ganjil");
         }
+
+        sc.close();
     }
 }

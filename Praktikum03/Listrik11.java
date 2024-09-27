@@ -28,5 +28,7 @@ public class Listrik11 {
 
         // Tampilkan total tagihan
         System.out.println("Total tagihan listrik adalah: Rp " + totalTagihan);
+
+        scanner.close();
     }
 }

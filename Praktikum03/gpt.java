@@ -27,6 +27,8 @@ public class gpt {
 
         // Tampilkan total tagihan
         System.out.println("Total tagihan listrik adalah: Rp " + totalTagihan);
+
+        scanner.close();
     }
 }
 

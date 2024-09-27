@@ -30,6 +30,8 @@ public class PemilihanHari11 {
 
         }
         System.out.println(dayName + " is a " + dayType);
+
+        sc.close();
     }
     
 }

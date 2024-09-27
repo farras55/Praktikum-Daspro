@@ -21,6 +21,8 @@ public class Bank11 {
         System.out.println("Bunga: " + bunga);
         System.out.println("Tabungan akhir: " + tabunganAkhir);
 
+        sc.close();
+
        
     }
 }
