@@ -1,7 +1,7 @@
 package Praktikum06;
 import java.util.Scanner;
 
-public class Latihan1DasproA11 {
+public class Latihan1DasproB11 {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
