@@ -49,7 +49,7 @@ public class Pemilihan2Percobaan211 {
             }
 
             total_bayar = harga - (harga * diskon);
-            System.out.println("Total bayar stelah diskon = " + total_bayar);
+            System.out.println("Total bayar setelah diskon = " + total_bayar);
         } 
         else if (member.equalsIgnoreCase("n")) {
             if (pilihan_menu == 1) {
@@ -68,6 +68,8 @@ public class Pemilihan2Percobaan211 {
                 System.out.println("Masukkan pilihan menu dengan benar");
                 return;
             }
+
+            
             
         }
     }
