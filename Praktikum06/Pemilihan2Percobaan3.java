@@ -12,7 +12,7 @@ public class Pemilihan2Percobaan3 {
         int penghasilan, gajiBersih;
         double pajak = 0;
 
-        System.out.print("Masukkan kategori");
+        System.out.print("Masukkan kategori : ");
         kategori = sc11.nextLine();
         System.out.print("Masukkan Besarnya Penghasilan : ");
         penghasilan = sc11.nextInt();
@@ -40,5 +40,7 @@ public class Pemilihan2Percobaan3 {
             System.out.println("Penghasilan Bersih : " + gajiBersih);
         } else 
             System.out.println("Masukan kategori salah");
+
+        sc11.close();
     }
 }

@@ -1,6 +1,7 @@
+package Praktikum06;
 import java.util.Scanner;
 
-public class diskon {
+public class Latihan2Daspro11 {
     
     public static void main(String[] args) {
         // Membuat scanner untuk membaca input dari pengguna

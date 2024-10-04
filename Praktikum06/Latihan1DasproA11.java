@@ -1,11 +1,11 @@
+package Praktikum06;
 import java.util.Scanner;
 
-public class Jajal {
+public class Latihan1DasproA11 {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int bilangan1, bilangan2, bilangan3;
-
+        int bilangan1, bilangan2, bilangan3, terbesar;
         System.out.println("...");
         System.out.print("Masukkan bilangan 1: ");
         bilangan1 = sc.nextInt();
@@ -16,16 +16,15 @@ public class Jajal {
         System.out.print("Masukkan bilangan 3: ");
         bilangan3 = sc.nextInt();
 
-        if (bilangan1 > bilangan2 && bilangan1 > bilangan3) {
-            System.out.println("Bilangan terbesar: " + bilangan1);
-        
-        } else if (bilangan2 > bilangan3) {
-            System.out.println("Bilangan terbesar: " + bilangan2);
-
-        } else {
-            System.out.println("Bilangan terbesar: " + bilangan3);
+        if (bilangan1 > bilangan2) {
+            terbesar = bilangan1;
+        } else if (bilangan2 > bilangan1) {
+            terbesar = bilangan2;
         }
-        
+        else 
+        terbesar = bilangan3;
+
+        System.out.println("Nilai terbesar adalah : " + terbesar);
         sc.close();
     }
 }
