@@ -16,7 +16,7 @@ public class Latihan2Daspro11 {
         if (hari.equalsIgnoreCase("rabu")) {
             // Meminta input dari pengguna mengenai jenis buku dan jumlah buku
         System.out.print("Masukkan jenis buku (kamus/novel/lainnya): ");
-        String jenisBuku = scanner.nextLine().toLowerCase(); // Mengubah input menjadi huruf kecil untuk memudahkan perbandingan
+        String jenisBuku = scanner.nextLine(); 
 
         System.out.print("Masukkan jumlah buku yang dibeli: ");
         int jumlahBuku = scanner.nextInt();
@@ -33,7 +33,7 @@ public class Latihan2Daspro11 {
             if (jumlahBuku > 2) {
                 diskon += 2;
             }
-        } else if (jenisBuku.equals("novel")) {
+        } else if (jenisBuku.equalsIgnoreCase("novel")) {
             // Diskon awal 7%
             diskon = 7;
 
