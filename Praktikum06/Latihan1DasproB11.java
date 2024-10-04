@@ -18,8 +18,8 @@ public class Latihan1DasproB11 {
 
         if (bilangan1 > bilangan2) {
             terbesar = bilangan1;
-        } else if (bilangan2 > bilangan1) {
-            terbesar = bilangan2;
+            if (bilangan2 > bilangan1)
+                terbesar = bilangan2;
         }
         else 
         terbesar = bilangan3;

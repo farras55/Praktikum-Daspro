@@ -9,7 +9,12 @@ public class Latihan2Daspro11 {
 
         System.out.println("...");
 
-        // Meminta input dari pengguna mengenai jenis buku dan jumlah buku
+        System.out.print("Masukkan hari : ");
+        String hari = scanner.nextLine();
+
+
+        if (hari.equalsIgnoreCase("rabu")) {
+            // Meminta input dari pengguna mengenai jenis buku dan jumlah buku
         System.out.print("Masukkan jenis buku (kamus/novel/lainnya): ");
         String jenisBuku = scanner.nextLine().toLowerCase(); // Mengubah input menjadi huruf kecil untuk memudahkan perbandingan
 
@@ -49,6 +54,8 @@ public class Latihan2Daspro11 {
         // Tampilkan total diskon yang diberikan
         System.out.println("Total diskon yang diberikan adalah: " + diskon + "%");
 
+        } else
+            System.out.println("Maaf anda belum bisa mendapat diskon.");
         // Menutup scanner
         scanner.close();
 }
