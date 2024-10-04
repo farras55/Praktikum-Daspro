@@ -51,12 +51,11 @@ public class Latihan2Daspro11 {
             }
         }
 
-        // Tampilkan total diskon yang diberikan
         System.out.println("Total diskon yang diberikan adalah: " + diskon + "%");
 
         } else
             System.out.println("Maaf anda belum bisa mendapat diskon.");
-        // Menutup scanner
+
         scanner.close();
 }
 }
