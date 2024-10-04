@@ -18,9 +18,6 @@ public class Latihan2Daspro11 {
         System.out.print("Masukkan jenis buku (kamus/novel/lainnya): ");
         String jenisBuku = scanner.nextLine(); 
 
-        System.out.print("Masukkan jumlah buku yang dibeli: ");
-        int jumlahBuku = scanner.nextInt();
-
         // Inisialisasi diskon
         double diskon = 0;
 
@@ -28,6 +25,9 @@ public class Latihan2Daspro11 {
         if (jenisBuku.equals("kamus")) {
             // Diskon awal 10%
             diskon = 10;
+            System.out.print("Masukkan jumlah buku yang dibeli: ");
+            int jumlahBuku = scanner.nextInt();
+
 
             // Tambahan diskon jika jumlah buku lebih dari 2
             if (jumlahBuku > 2) {
@@ -36,8 +36,9 @@ public class Latihan2Daspro11 {
         } else if (jenisBuku.equalsIgnoreCase("novel")) {
             // Diskon awal 7%
             diskon = 7;
+            System.out.print("Masukkan jumlah buku yang dibeli: ");
+            int jumlahBuku = scanner.nextInt();
 
-            // Tambahan diskon jika jumlah buku lebih dari 3
             if (jumlahBuku > 3) {
                 diskon += 2;
             } else {
@@ -45,7 +46,9 @@ public class Latihan2Daspro11 {
                 diskon += 1;
             }
         } else {
-            // Diskon 5% jika buku bukan kamus atau novel dan jumlah buku lebih dari 3
+            System.out.print("Masukkan jumlah buku yang dibeli: ");
+            int jumlahBuku = scanner.nextInt();
+
             if (jumlahBuku > 3) {
                 diskon = 5;
             }
