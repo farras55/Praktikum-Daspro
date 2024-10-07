@@ -8,22 +8,24 @@ public class Pemilihan2Percobaan211 {
         
         Scanner sc11 = new Scanner(System.in);
 
-        int pilihan_menu, harga;
-        String member;
-        double diskon, total_bayar;
+        int pilihan_menu, harga, potonganQris = 0;
+        String member, metodePembayaran;
+        double diskon, totalAkhir, total_bayar;
 
         System.out.println("-------------------------");
         System.out.println("===== MENU KAFE JTI =====");
         System.out.println("-------------------------");
         System.out.println("1. Ricebowl");
         System.out.println("2. Ice Tea");
-        System.out.println("3. Paket Bunding (Ricebowl + Ice tea");
+        System.out.println("3. Paket Bunding (Ricebowl + Ice tea)");
         System.out.println("------------------------------------");
         System.out.print("masukkan angka dari menu yang dipilih = ");
         pilihan_menu = sc11.nextInt();
         sc11.nextLine();
         System.out.print("Apakah punya member (y/n) ? = ");
         member = sc11.nextLine();
+        System.out.print("Masukkan metode pembayaran (cash/qris) = ");
+        metodePembayaran = sc11.nextLine();
         System.out.println("------------------------------------");
 
         sc11.close();
@@ -47,9 +49,17 @@ public class Pemilihan2Percobaan211 {
                 System.out.println("Masukkan pilihan menu dengan benar");
                 return;
             }
-
+            if (metodePembayaran.equalsIgnoreCase("qris")) {
+                potonganQris = 1000;
+                System.out.println("Karena anda memakai QRIS anda mendapat potongan sebesar Rp.1000");
+            } else if (metodePembayaran.equalsIgnoreCase("cash")) {
+                potonganQris = 0;
+            } else {
+                System.out.println("Metode Pembayaran anda tidak tersedia");
+            }
             total_bayar = harga - (harga * diskon);
-            System.out.println("Total bayar setelah diskon = " + total_bayar);
+            totalAkhir = total_bayar - potonganQris;
+            System.out.println("Total bayar setelah diskon = " + totalAkhir);
         } 
         else if (member.equalsIgnoreCase("n")) {
             if (pilihan_menu == 1) {
@@ -68,9 +78,16 @@ public class Pemilihan2Percobaan211 {
                 System.out.println("Masukkan pilihan menu dengan benar");
                 return;
             }
-
-            
-            
+            if (metodePembayaran.equalsIgnoreCase("qris")) {
+                potonganQris = 1000;
+                System.out.println("Karena anda memakai QRIS anda mendapat potongan sebesar Rp.1000");
+            } else if (metodePembayaran.equalsIgnoreCase("cash")) {
+                potonganQris = 0;
+            } else {
+                System.out.println("Metode Pembayaran anda tidak tersedia");
+            }
+            totalAkhir = harga - potonganQris;
+            System.out.println("Total bayar setelah diskon = " + totalAkhir);    
         }
     }
 }
