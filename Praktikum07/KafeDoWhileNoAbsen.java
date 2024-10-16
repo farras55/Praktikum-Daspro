@@ -27,7 +27,9 @@ public class KafeDoWhileNoAbsen {
             System.out.println("Total yang harus dibayar: Rp " + totalHarga);
             sc.nextLine();
         } while (true);
-        
+
+        sc.close();
+            
         System.out.println("Semua transaksi selesai.");
 
     }
