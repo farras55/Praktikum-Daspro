@@ -4,8 +4,8 @@ public class PenjualanTiketBioskop {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int totalTiketTerjual = 0;
-        long totalPendapatan = 0;
-        final int HARGA_TIKET = 50000;
+        int totalPendapatan = 0;
+        int HARGA_TIKET = 50000;
 
         while (true) {
             System.out.print("Masukkan jumlah tiket yang terjual (0 untuk mengakhiri): ");
@@ -34,6 +34,6 @@ public class PenjualanTiketBioskop {
         sc.close();
 
         System.out.println("Total tiket yang terjual: " + totalTiketTerjual + " tiket");
-        System.out.println("Total pendapatan: Rp " + totalPendapatan);
+        System.out.println("Total pendapatan: Rp." + totalPendapatan);
     }
 }
