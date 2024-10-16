@@ -41,5 +41,7 @@ public class SiakadWhileNoAbsen {
             }
             i++;
         }
+
+        sc.close();
     }
 }

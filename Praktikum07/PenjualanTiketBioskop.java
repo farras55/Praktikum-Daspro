@@ -31,6 +31,8 @@ public class PenjualanTiketBioskop {
             totalPendapatan += hargaSetelahDiskon;
         }
 
+        sc.close();
+
         System.out.println("Total tiket yang terjual: " + totalTiketTerjual + " tiket");
         System.out.println("Total pendapatan: Rp " + totalPendapatan);
     }

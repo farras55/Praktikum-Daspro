@@ -29,6 +29,8 @@ public class TarifParkir {
             }
         }
 
+        sc.close();
+
         System.out.println("Total biaya parkir: Rp " + totalBiaya);
     }
 }

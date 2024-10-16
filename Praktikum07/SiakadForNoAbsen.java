@@ -19,6 +19,8 @@ public class SiakadForNoAbsen {
             }
         }
 
+        sc.close();
+
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);
     }
