@@ -14,7 +14,7 @@ public class NamaAtlet {
             if (j == 1) {
                 System.out.println("CABOR BADMINTON");
                 for (int a = 1; a <= 5; a++) {
-                    System.out.print("Masukkan nama atlet badminton " + namaKampus + " ke-" + a + " = ");
+                    System.out.print("Masukkan nama atlet badminton ke-" + a + " = ");
         
                     if (a == 1) {
                         badminton += sc.nextLine();

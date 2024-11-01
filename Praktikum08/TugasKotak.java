@@ -27,5 +27,21 @@ public class TugasKotak {
             }
             System.out.println();
         }
+
+        if (N > 9) {
+            System.out.println("Nilai N harus minimal 3.");
+            return;
+        }
+        
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                if (i == 0 || i == N - 1 || j == 0 || j == N - 1 || i == 1 || i == N - 1 || j == 1 || j == N - 1) {
+                    System.out.print(N + " ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
     }
 }
