@@ -32,6 +32,8 @@ public class SIAKAD12 {
             System.out.println("Mata Kuliah: " + totalPerMatkul/4);
         }
 
+        System.out.println(nilai[0][0]);
+
         sc.close();
 
     }
