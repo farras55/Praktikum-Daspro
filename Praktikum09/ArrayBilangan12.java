@@ -12,7 +12,6 @@ public class ArrayBilangan12 {
 
         for (int i = 0; i < bil.length; i++) {
             System.out.println(bil[i]);
-            break;
         }
 
     }
