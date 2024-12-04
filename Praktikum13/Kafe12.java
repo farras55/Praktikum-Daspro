@@ -10,8 +10,17 @@ public class Kafe12 {
         int pilihanMenu = sc.nextInt();
         System.out.print("Masukkan jumlah item yang ingin dipesan: ");
         int banyakItem = sc.nextInt();
+        String kodePromo = sc.next();
 
-        int totalHarga = hitungTotalHarga(pilihanMenu, banyakItem);
+        double totalHarga = hitungTotalHarga(pilihanMenu, banyakItem, kodePromo);
+
+        System.out.println("Total harga untuk pesanan anda: Rp" + totalHarga);
+
+        if (kodePromo.equalsIgnoreCase("DISKON50") || kodePromo.equalsIgnoreCase("DISKON30")) {
+            System.out.println("Kode promo diterapkan: " + kodePromo);
+        } else if (!kodePromo.equalsIgnoreCase("NONE")) {
+            System.out.println("Kode promo invalid. Tidak ada diskon yang diberikan.");
+        }
 
         System.out.println("Total harga untuk pesanan anda: Rp" + totalHarga);
 
@@ -36,10 +45,20 @@ public class Kafe12 {
         System.out.println("Silahkan pilih menu yang anda inginkan.");
     }
 
-    public static int hitungTotalHarga(int pilihanMenu, int banyakItem) {
+    public static double hitungTotalHarga(int pilihanMenu, int banyakItem, String kodePromo) {
         int[] hargaItems = {15000, 20000, 22000, 12000, 10000, 18000};
-
-        int hargaTotal = hargaItems[pilihanMenu - 1] * banyakItem;
+        double hargaTotal = hargaItems[pilihanMenu - 1] * banyakItem;
+    
+        // Diskon berdasarkan kode promo
+        if (kodePromo.equalsIgnoreCase("DISKON50")) {
+            hargaTotal *= 0.5; // Diskon 50%
+        } else if (kodePromo.equalsIgnoreCase("DISKON30")) {
+            hargaTotal *= 0.7; // Diskon 30%
+        } else if (!kodePromo.equalsIgnoreCase("NONE")) {
+            System.out.println("Kode promo invalid. Tidak ada diskon yang diberikan.");
+        }
+    
         return hargaTotal;
     }
+    
 }
